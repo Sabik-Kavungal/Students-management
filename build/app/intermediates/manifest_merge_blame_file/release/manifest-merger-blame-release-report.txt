@@ -1,0 +1,106 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.myapp"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+8-->F:\MyApp\android\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="31" />
+9-->F:\MyApp\android\app\src\main\AndroidManifest.xml
+10
+11    <application
+12        android:name="android.app.Application"
+12-->F:\MyApp\android\app\src\main\AndroidManifest.xml:5:9-42
+13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+13-->[androidx.core:core:1.8.0] C:\Users\sabik\.gradle\caches\transforms-3\d363e3b5616f580c766e3e2b3c05f27d\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
+14        android:icon="@mipmap/ic_launcher"
+14-->F:\MyApp\android\app\src\main\AndroidManifest.xml:6:9-43
+15        android:label="myapp" >
+15-->F:\MyApp\android\app\src\main\AndroidManifest.xml:4:9-30
+16        <activity
+16-->F:\MyApp\android\app\src\main\AndroidManifest.xml:7:9-27:20
+17            android:name="com.example.myapp.MainActivity"
+17-->F:\MyApp\android\app\src\main\AndroidManifest.xml:8:13-41
+18            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+18-->F:\MyApp\android\app\src\main\AndroidManifest.xml:12:13-163
+19            android:exported="true"
+19-->F:\MyApp\android\app\src\main\AndroidManifest.xml:9:13-36
+20            android:hardwareAccelerated="true"
+20-->F:\MyApp\android\app\src\main\AndroidManifest.xml:13:13-47
+21            android:launchMode="singleTop"
+21-->F:\MyApp\android\app\src\main\AndroidManifest.xml:10:13-43
+22            android:theme="@style/LaunchTheme"
+22-->F:\MyApp\android\app\src\main\AndroidManifest.xml:11:13-47
+23            android:windowSoftInputMode="adjustResize" >
+23-->F:\MyApp\android\app\src\main\AndroidManifest.xml:14:13-55
+24
+25            <!--
+26                 Specifies an Android theme to apply to this Activity as soon as
+27                 the Android process has started. This theme is visible to the user
+28                 while the Flutter UI initializes. After that, this theme continues
+29                 to determine the Window background behind the Flutter UI.
+30            -->
+31            <meta-data
+31-->F:\MyApp\android\app\src\main\AndroidManifest.xml:19:13-22:17
+32                android:name="io.flutter.embedding.android.NormalTheme"
+32-->F:\MyApp\android\app\src\main\AndroidManifest.xml:20:15-70
+33                android:resource="@style/NormalTheme" />
+33-->F:\MyApp\android\app\src\main\AndroidManifest.xml:21:15-52
+34
+35            <intent-filter>
+35-->F:\MyApp\android\app\src\main\AndroidManifest.xml:23:13-26:29
+36                <action android:name="android.intent.action.MAIN" />
+36-->F:\MyApp\android\app\src\main\AndroidManifest.xml:24:17-68
+36-->F:\MyApp\android\app\src\main\AndroidManifest.xml:24:25-66
+37
+38                <category android:name="android.intent.category.LAUNCHER" />
+38-->F:\MyApp\android\app\src\main\AndroidManifest.xml:25:17-76
+38-->F:\MyApp\android\app\src\main\AndroidManifest.xml:25:27-74
+39            </intent-filter>
+40        </activity>
+41        <!--
+42             Don't delete the meta-data below.
+43             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+44        -->
+45        <meta-data
+45-->F:\MyApp\android\app\src\main\AndroidManifest.xml:30:9-32:33
+46            android:name="flutterEmbedding"
+46-->F:\MyApp\android\app\src\main\AndroidManifest.xml:31:13-44
+47            android:value="2" />
+47-->F:\MyApp\android\app\src\main\AndroidManifest.xml:32:13-30
+48
+49        <provider
+49-->[:image_picker_android] F:\MyApp\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:10:9-18:20
+50            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+50-->[:image_picker_android] F:\MyApp\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-82
+51            android:authorities="com.example.myapp.flutter.image_provider"
+51-->[:image_picker_android] F:\MyApp\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:12:13-74
+52            android:exported="false"
+52-->[:image_picker_android] F:\MyApp\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:13:13-37
+53            android:grantUriPermissions="true" >
+53-->[:image_picker_android] F:\MyApp\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:14:13-47
+54            <meta-data
+54-->[:image_picker_android] F:\MyApp\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:15:13-17:75
+55                android:name="android.support.FILE_PROVIDER_PATHS"
+55-->[:image_picker_android] F:\MyApp\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:16:17-67
+56                android:resource="@xml/flutter_image_picker_file_paths" />
+56-->[:image_picker_android] F:\MyApp\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:17:17-72
+57        </provider>
+58
+59        <uses-library
+59-->[androidx.window:window:1.0.0-beta04] C:\Users\sabik\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+60            android:name="androidx.window.extensions"
+60-->[androidx.window:window:1.0.0-beta04] C:\Users\sabik\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+61            android:required="false" />
+61-->[androidx.window:window:1.0.0-beta04] C:\Users\sabik\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+62        <uses-library
+62-->[androidx.window:window:1.0.0-beta04] C:\Users\sabik\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+63            android:name="androidx.window.sidecar"
+63-->[androidx.window:window:1.0.0-beta04] C:\Users\sabik\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+64            android:required="false" />
+64-->[androidx.window:window:1.0.0-beta04] C:\Users\sabik\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+65    </application>
+66
+67</manifest>
